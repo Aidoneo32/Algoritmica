@@ -1,18 +1,24 @@
-#include <iostream>//usar
-
-using namespace std;//usamos espacio de nombre estandar cout (salida), cin(entrada), cerr (salida de errores),
-//clog (se usa para mensaje de log
+#include <conio.h>
+#include <stdio.h>
 
 int main()
 {
-    float celsius, fahrenheit;
+    int dia, mes, ano, edad;
+    printf ("dame tu dia de nacimiento");
+    scanf ("%d",&dia);
 
-    cout <<"Grados Celsius: ";
-    cin >> celsius;
+    printf ("dame tu mes de nacimiento");
+    scanf ("%d",&mes);
 
-    fahrenheit = (celsius* 9 / 5) +32;
+    printf("dame tu ano de nacimient");
+    scanf ("%d",&ano);
+    printf ("tu dia de nacimiento es: %d",dia);
+    printf ("tu mes de nacimiento es: %d",mes);
 
-    cout <<celsius << "°C son" << fahrenheit << "°F" << endl;
+    printf("tu ano de nacimiento es: %d",ano);
+    edad=2024-ano;
+    printf("tu edad es %d",edad);
 
-    return 0;
+getch();
+
 }
